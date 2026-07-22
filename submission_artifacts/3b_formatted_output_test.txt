@@ -1,0 +1,5 @@
+Terminal session:
+$ python3
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector('I am so happy I am doing this.')
+{'anger': 0.01, 'disgust': 0.01, 'fear': 0.01, 'joy': 0.88, 'sadness': 0.01, 'dominant_emotion': 'joy'}

@@ -1,25 +1,5 @@
 # Final project
 
-## Final project
+AI-based web application for detecting emotions in customer feedback.
 
-This project is a Flask web application that uses the IBM Skills Network
-Watson NLP emotion detection endpoint to analyze text and report emotion
-scores with the dominant emotion.
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run unit tests:
-
-```bash
-python3 test_emotion_detection.py
-```
-
-Start the Flask app:
-
-```bash
-python3 server.py
-```
+This project implements an `EmotionDetection` package, unit tests, Flask web deployment, blank-input error handling, and static-analysis-ready code for the IBM Skills Network final project.

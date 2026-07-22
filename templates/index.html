@@ -1,32 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="./static/mywebscript.js"></script>
-    <style>
-        .center-heading {
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="card">
-        <div class="card-body">
-            <h1 class="center-heading">NLP - Emotion Detection</h1> 
-            <div style="padding: 25px 25px 25px 25px;">
-            <h2 class="mb-3">
-                <label class="form-label">Please enter the text to be analyzed</label>
-                <input type="textarea" class="form-control" id="textToAnalyze">
-            </h2>
+    <main class="page-shell">
+        <section class="analysis-panel">
+            <h1>Emotion Detection</h1>
+            <p class="lede">Analyze customer feedback and identify the dominant emotion.</p>
 
-            <div style="padding: 25px 25px 25px 25px;">
-                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Run Sentiment Analysis</button>
-            </div>
-            <div style="padding: 25px 25px 25px 25px;"></div>
-            <h2 class="mb-3">
-                <label class="form-label">Result of Emotion Detection</label>
-            </h2>
+            <label for="textToAnalyze">Enter text to analyze</label>
+            <textarea
+                id="textToAnalyze"
+                name="textToAnalyze"
+                autocomplete="off"
+                rows="5"
+            ></textarea>
 
-            <div id="system_response" style="padding: 25px 25px 25px 25px;"></div>
-        </div>
-    </div>
+            <button type="button" onclick="runEmotionAnalysis()">Run analysis</button>
+            <p id="system_response" class="response-output" aria-live="polite"></p>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
 </body>
+</html>

@@ -1,0 +1,6 @@
+Command:
+pylint --persistent=n server.py
+
+Output:
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10

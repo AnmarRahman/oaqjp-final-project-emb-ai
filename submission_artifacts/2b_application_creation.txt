@@ -1,0 +1,5 @@
+Terminal session:
+$ python3
+>>> import emotion_detection
+>>> emotion_detection.emotion_detector('I love this new technology.')
+{"emotionPredictions": [{"emotion": {"anger": 0.01, "disgust": 0.01, "fear": 0.01, "joy": 0.9, "sadness": 0.01}}]}

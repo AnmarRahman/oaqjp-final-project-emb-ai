@@ -1,0 +1,9 @@
+Command:
+python3 -m unittest test_emotion_detection.py
+
+Output:
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.131s
+
+OK

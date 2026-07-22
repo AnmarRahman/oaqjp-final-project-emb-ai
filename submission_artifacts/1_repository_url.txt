@@ -1,0 +1,10 @@
+Use this URL after pushing the completed project files to the root of your fork:
+
+https://github.com/AnmarRahman/oaqjp-final-project-emb-ai/blob/main/README.md
+
+If your default branch is `master`, use:
+
+https://github.com/AnmarRahman/oaqjp-final-project-emb-ai/blob/master/README.md
+
+Expected README title:
+Final project

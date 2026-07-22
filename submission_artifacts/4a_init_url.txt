@@ -1,0 +1,14 @@
+Use this URL after pushing the completed project files to the root of your fork:
+
+https://github.com/AnmarRahman/oaqjp-final-project-emb-ai/blob/main/EmotionDetection/__init__.py
+
+If your default branch is `master`, use:
+
+https://github.com/AnmarRahman/oaqjp-final-project-emb-ai/blob/master/EmotionDetection/__init__.py
+
+Current __init__.py contents:
+"""Emotion detection package."""
+
+from .emotion_detection import emotion_detector
+
+__all__ = ["emotion_detector"]
